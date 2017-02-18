@@ -1,0 +1,104 @@
+GIT
+
+************************
+Setup Project Locally - 
+
+git clone URL
+
+//Goto Folder and check branch
+
+git branch
+
+//Output will be master if you want to go to specific branch 
+
+git checkout <branch_name>
+
+git checkout project-k
+
+git pull origin project-k  //Refersh main branch fr ********************* MOST IMP *************************
+
+//Checkout Changes to local branch and do ur work
+
+git checkout -b local_project-k
+
+
+//Now after doing git branch you will come to know that you're on local_project-k branch
+
+// Referesh your branch from existing branch ****************** Always REFERESH YOUR BRANCH CHECK MOST IMP ************************
+
+git pull origin project-k
+
+// Referesh your branch from existing branch ****************** Always REFERESH YOUR BRANCH MOST IMP  ************************
+
+//Now your branch is fully refereshed with project-k
+
+//In order to make sure do git status
+git status
+
+*****************
+//Now you can work here ...
+
+//After working if you want to see the changes done by you 
+
+git status
+
+git add /UR/FILE
+
+git commit -m "UR MSG"
+
+git push origin your-branch/local_project-k
+
+git push origin local_project-k
+
+=====================================================================
+PNR - 8156262976 , 2708923383
+
+
+
+
+
+===================================
+Rebasing for Testing
+
+First checkout your feature branch on stage
+
+git checkout batch_dequeuer 
+
+Do pull origin
+
+git pull origin batch_dequeuer
+
+Create Rebase branch :-
+
+git checkout -b batch_dequeuer_rebase
+
+git checkout project-k                  (Checkout Live Branch)
+
+git pull origin project_k				(Make sure you have latest specs of LIVE)
+
+git checkout batch_dequeuer_rebase
+
+git rebase project_k
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
